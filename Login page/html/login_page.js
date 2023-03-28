@@ -4,7 +4,7 @@
 //         try {
 //             const ele = evClick.target;
 //             const eleClass = ele.getAttribute('class');
-            
+
 //             switch (eleClass) {
 //                 case 'bleh':
 //                     alert(`bleh geclick`);
@@ -43,29 +43,28 @@
 //     const FormBox = document.getElementById('form-box');
 //     FormBox.addEventListener('click', function(evClick)) {
 //         try{
-            
+
 //         }
 //     }
-    
+
 // }
 
-var
-sEmail = '';
-sPassword= '';
-
-const FormBox = document.getElementById('form-box');
-
-document.getElementById('email-input').value = sEmail;
-document.getElementById('password-input').value = sPassword;
-   
-    function btnClicked(){
-    console.log(sEmail);
-    }
-
-     FormBox.addEventListener('click', btnClicked);
-
-        
-        
 
 
-     
+
+
+const btnLogin = document.getElementById('login-button');
+
+function btnClicked() {
+    sEmail = document.getElementById('email-input').value;
+    sPassword = document.getElementById('password-input').value;
+    console.log(`Email: ${sEmail} Password: ${sPassword}`);
+}
+
+btnLogin.addEventListener('click', btnClicked);
+
+
+
+
+
+
