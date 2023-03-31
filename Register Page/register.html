@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="/Register Page/css/register.css"> 
+    <link rel="stylesheet" href="css/register.css"> 
 </head>
 <body>
     <section>
@@ -20,13 +20,13 @@
 
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required id="email-input">
+                        <input type="email" required id="email-input" name="email">
                         <label for="">Email</label>
                     </div>
 
                     <div class="inputbox">
                         <ion-icon name="person-outline"></ion-icon>
-                        <input type="text" required id="username-input">
+                        <input type="text" required id="username-input" name="username">
                         <label for="">Username</label>
                     </div>
 
@@ -37,10 +37,26 @@
                     </div>
 
                     <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="password-input-retype" name="password">
+                        <label for="">Retype your password</label>
+                    </div>
+
+                    <div id="Password-Checking">
+                        <span id="number" class="hideme">Password must contain at least one Number!</span>
+                        <span id="uppercase" class="hideme">Password must contain at least one Uppercase letter!</span>
+                        <span id="lowercase" class="hideme">Password must contain at least one Lowercase letter!</span>
+                        <span id="special" class="hideme">Password must contain at least one Special character!</span>
+                        <span id="password-same" class="hideme"> Your Passwords match!</span>
+                        <span id="password-not-same" class="hideme">Your Passwords don't match!</span>
+
+                    </div>
+
+                    <!-- <div class="inputbox">
                         <ion-icon name="calendar-outline"></ion-icon>
                         <input type="date" class="date-input" required id="DateOfBirth-input">
                         <label for="">Date Of Birth</label>
-                    </div>
+                    </div> -->
 
                     <button id="register-button">Create Your Account</button>
 
@@ -56,7 +72,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script async src='/Register Page/register.js'></script>
+    <script async src='register.js'></script>
 
 </body>
 </html>

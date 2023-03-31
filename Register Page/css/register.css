@@ -147,3 +147,7 @@ button {
 .logon p a:hover {
     text-decoration: underline;
 }
+
+.hideme {
+    display: none;
+}
